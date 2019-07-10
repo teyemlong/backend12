@@ -69,8 +69,7 @@ public class ContactsRestService {
 	@RequestMapping(value="/contacts/{id}",method=RequestMethod.PUT)
 	public Contacts EditContact(@PathVariable Long id,@RequestBody Contacts c) {
 		c.setId(id);
-		return contactsRepository.save(c);
-		System.out.println();
+		return contactsRepository.save(c);		
 		
 	}
 	
